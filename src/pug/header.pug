@@ -1,19 +1,20 @@
 header.header
     .container 
-        header.header__top
-            .header-column.left-header
+        .header__top
+            .header__column.left-header
                 h1.left-header__name Кобыхнов Кирилл.
                 h2.left-header__description Портфолио.
                 .left-header__contacts.contacts
                     a.contacts__item.item-contacts(href="https://github.com/daifoll" target="__blank")
-                        i.fab.fa-github.item-contacts__icon
+                        img(src=require("../images/header/contacts/github.svg"), alt="").item-contacts__icon
+                        span.item-contacts__text /daifoll
                     a.contacts__item.item-contacts(href="tel:+79965003886")
-                        i.fas.fa-phone-alt.item-contacts__icon(title='Позвонить')
+                        img(src=require("../images/header/contacts/phone.svg"), alt="").item-contacts__icon
                         span.item-contacts__text +7 996 500 38 86
                     a.contacts__item.item-contacts(href="images/header/contacts/portfoilio.pdf" download="")
+                        img(src=require("../images/header/contacts/download.svg"), alt="").item-contacts__icon
                         span.item-contacts__text Скачать резюме
-                        i.fas.fa-angle-double-down.item-contacts__icon
-            .header-column.right-header
+            .header__column.right-header
                 .right-header__swithes.switches-header
                     label.switches-header__switch.theme
                         input(type='checkbox').theme__input
