@@ -13,3 +13,8 @@
     padding: 0;
 }
 
+body{
+    @include primalFont;
+    @include primalFontSize;
+}
+

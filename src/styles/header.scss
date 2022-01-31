@@ -1,10 +1,13 @@
 .header {
+    position: relative;
     max-width: 100%;
     height: 100vh;
     background-image: $primalBGGradient;
     color: $primalTextColor;
     text-transform: uppercase;
+    overflow: hidden;
     @include primalFont;
+    @include primalFontBold;
 
     &__top {
         display: flex;
@@ -14,19 +17,18 @@
             flex-basis: 85%;
 
             &__name {
-                line-height: auto;
-                font-size: 130px;
+                @include primalFontSizeExtra;
             }
 
             &__description {
-                font-size: 130px;
+                @include primalFontSizeExtra;
             }
 
             &__contacts {
                 margin-top: 20px;
                 display: flex;
-                flex-direction: column;
-                max-width: 365px;
+                // flex-direction: column;
+                max-width: 100%;
                 font-size: 40px;
                 align-content: space-between;
 
@@ -35,7 +37,7 @@
             .contacts {
                 .item-contacts {
                     &:not(:first-child) {
-                        margin-top: 15px;
+                        margin-left: 20px;
                     }
 
                     text-decoration: none;
@@ -78,12 +80,19 @@
                 display: flex;
                 flex-direction: column;
 
-                &__switch {
+                &__text{
+                    @include primalFontExtraLight;
+                    margin-bottom: 5px;
+                }
 
+                &__switch {
                     position: relative;
                     display: inline-block;
                     width: 60px;
                     height: 34px;
+                        &:not(:last-child){
+                            margin-bottom: 30px;
+                        }
                 }
 
                 .theme {
@@ -107,6 +116,7 @@
                         bottom: 0;
                         background-color: #ccc;
                         transition: .4s;
+                        border-radius: 10%;
                             &:before {
                                 position: absolute;
                                 content: "";
@@ -115,7 +125,6 @@
                                 left: 4px;
                                 bottom: 4px;
                                 background-color: white;
-                                -webkit-transition: .4s;
                                 transition: .4s;
                             }
                     }
@@ -123,7 +132,6 @@
                 }
 
                 .language {
-                    margin-top: 20px;
                     &__input {
                         display: none;
                             &:checked + .language__slider {
@@ -144,6 +152,7 @@
                         bottom: 0;
                         background-color: #ccc;
                         transition: .4s;
+                        border-radius: 10%;
                             &:before {
                                 position: absolute;
                                 content: "";
@@ -152,12 +161,56 @@
                                 left: 4px;
                                 bottom: 4px;
                                 background-color: white;
-                                -webkit-transition: .4s;
                                 transition: .4s;
                             }
                     }
                 }
             }
+        }
+
+        .bottom-header{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);    
+            width: 100%;
+            padding: 10px 0 40px 0;
+            background-color: pink;
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer;
+            @include primalFontBold;
+            @include fontSizeHeaderButton;
+                &__text{
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: 50%;
+                        transform: translateX(-50px); 
+                        background: url('../images/header/bottom-header/projects-button.svg') no-repeat;
+                        width: 100px;
+                        height: 100px;
+                        overflow: hidden;
+                    }
+                }
+
+                .projects-button-aimation:after{
+                    animation-name: projects-fall;
+                    animation-duration: 0.7s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+
+                @keyframes projects-fall{
+                    from {
+                        top: 5px;
+                    }
+
+                    to {
+                        top: 15px;
+                    }
+                }
         }
     }
 }
