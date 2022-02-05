@@ -18,19 +18,32 @@
 
             &__name {
                 @include primalFontSizeExtra;
+                    @media screen and (max-width: 1120px) {
+                        font-size: 150px;  
+                    }
             }
 
             &__description {
                 @include primalFontSizeExtra;
+                    @media screen and (max-width: 1120px) {
+                        font-size: 150px;  
+                    }
             }
 
             &__contacts {
                 margin-top: 20px;
                 display: flex;
-                // flex-direction: column;
                 max-width: 100%;
                 font-size: 40px;
                 align-content: space-between;
+                    @media screen and (max-width: 1200px){
+                        justify-content: space-between;
+                        
+                    }
+
+                    @media screen and (max-width: 1120px) {
+                        font-size: 35px; 
+                    }
 
             }
 
@@ -38,6 +51,9 @@
                 .item-contacts {
                     &:not(:first-child) {
                         margin-left: 20px;
+                        @media screen and (max-width: 1200px){
+                            margin-left: 0;
+                        }
                     }
 
                     text-decoration: none;
