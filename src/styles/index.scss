@@ -17,4 +17,9 @@ body{
     @include primalFont;
     @include primalFontSize;
 }
+// Цвет общего выделения на сайте
+::selection{
+    color: white;
+    background: black;
+}
 
