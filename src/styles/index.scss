@@ -3,7 +3,9 @@
 @import 'mixins';
 @import 'grid';
 @import 'normalize.css';
+@import 'footer';
 @import 'header';
+
 
 
 // Дополнительное обнуление стилей
@@ -36,6 +38,8 @@ a:hover {
 body{
     @include primalFont;
     @include primalFontSize;
+    margin: 0;
+    padding: 0;
 }
 
 // Цвет общего выделения на сайте

@@ -6,7 +6,6 @@
     color: $primalTextColor;
     text-transform: uppercase;
     overflow: hidden;
-    @include primalFont;
     @include primalFontBold;
     &__top {
         display: flex;
