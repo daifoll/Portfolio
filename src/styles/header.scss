@@ -96,8 +96,6 @@
                         }
                     }
 
-                    text-decoration: none;
-
                     &__text {
                         margin-left: 10px;
                     }
@@ -105,22 +103,6 @@
                     &__icon {
                         width: 50px;
                     }
-                }
-
-                .item-contacts:link {
-                    color: inherit;
-                }
-
-                .item-contacts:active {
-                    color: inherit;
-                }
-
-                .item-contacts:visited {
-                    color: inherit;
-                }
-
-                .item-contacts:hover {
-                    text-decoration: underline;
                 }
 
             }

@@ -13,10 +13,31 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+a:link {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*ОБЩИЕ СТИЛИ ДЛЯ САЙТА*/
 body{
     @include primalFont;
     @include primalFontSize;
 }
+
 // Цвет общего выделения на сайте
 ::selection{
     color: white;
