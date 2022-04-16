@@ -2,10 +2,14 @@
     position: relative;
     max-width: 100%;     
     &__column{
+        max-width: 100%;
         &:nth-child(2n+2){
             background-color: $DARKThemePrimalBGColor;
             color: $DARKThemePrimalTextColor;
             margin-top: 40px;
+        }
+        &::selection:nth-child(2n+2){
+            color: $primalBGColor;
         }
     }
 
@@ -19,8 +23,9 @@
         justify-content: center;
         flex-wrap: wrap;
             .projects-image{
-                flex-basis: 60%;
-                height: 500px;
+                // padding: 0px 20px;
+                flex-basis: 50%;
+                height: 400px;
                     &__img{
                         width: 100%;
                         height: inherit;
@@ -31,7 +36,7 @@
             }
 
             .projects-info{
-                flex-basis: 40%;
+                flex-basis: 50%;
                 display: flex;
                 flex-direction: column;
                 padding-left: 40px;
@@ -48,9 +53,35 @@
                     .projects-description{
                         margin-top: 20px;
                         display: flex;
+                        flex-direction: column;
                             &__item{
                                 font-size: $projectsDescriptionFontSize;
+                                &:not(:first-child){
+                                    margin-top: 30px;
+                                }
                             }
+
+                            &__list{
+                                @include primalFontExtraLight;
+                                font-size: $projectsDescriptionListFontSize;
+                                list-style: none;
+                                margin-top: 10px;
+                                    &>li.projects-description-list__item:before{
+                                        content:  "—";
+                                        position: relative;
+                                        left: -5px;
+                                    }
+                                
+                            }
+                            
+                    }
+
+                    .projects-button{
+                        margin-top: 30px;
+                        &__watchBtn{
+                            @include primalFontBold;
+                            text-transform: uppercase;
+                        }
                     }
 
             }
