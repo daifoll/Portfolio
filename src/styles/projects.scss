@@ -5,6 +5,7 @@
         &:nth-child(2n+2){
             background-color: $DARKThemePrimalBGColor;
             color: $DARKThemePrimalTextColor;
+            margin-top: 40px;
         }
     }
 
@@ -14,21 +15,44 @@
 
     &-item{
         display: flex;
+        // align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
             .projects-image{
-                // flex-basis: 50%;
-                max-width: 100%;
-                height: auto;
+                flex-basis: 60%;
+                height: 500px;
                     &__img{
-                        width: 600px;
-                        height: 600px;
+                        width: 100%;
+                        height: inherit;
                         object-fit: cover;
                         object-position: top;
+                        
                     }
             }
 
             .projects-info{
-                // flex-basis: 50%;
+                flex-basis: 40%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+                    .projects-header{
+                        display: flex;
+                        justify-content: center;
+                            &__item{
+                                text-transform: uppercase;
+                                @include primalFontBold;
+                                font-size: $projectsHeaderFontSize;
+
+                            }
+                    }
+                    .projects-description{
+                        margin-top: 20px;
+                        display: flex;
+                            &__item{
+                                font-size: $projectsDescriptionFontSize;
+                            }
+                    }
+
             }
     }
     
