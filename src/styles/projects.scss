@@ -6,7 +6,7 @@
         &:nth-child(2n+2){
             background-color: $DARKThemePrimalBGColor;
             color: $DARKThemePrimalTextColor;
-            margin-top: 40px;
+            // margin-top: 40px;
         }
         &::selection:nth-child(2n+2){
             color: $primalBGColor;
@@ -19,26 +19,31 @@
 
     &-item{
         display: flex;
-        // align-items: center;
+        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 40px 0;
+        height: 100vh;
             .projects-image{
                 // padding: 0px 20px;
                 flex-basis: 50%;
                 height: 400px;
-                    &__img{
-                        width: 100%;
-                        height: inherit;
-                        object-fit: cover;
-                        object-position: top;
-                        
-                    }
+                position: relative;
+                
+                &__img{
+                    width: 100%;
+                    height: inherit;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                
             }
-
+    
             .projects-info{
                 flex-basis: 50%;
                 display: flex;
                 flex-direction: column;
+                align-content: center;
                 padding-left: 40px;
                     .projects-header{
                         display: flex;
