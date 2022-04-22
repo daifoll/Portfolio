@@ -264,7 +264,13 @@
             @include primalFontBold;
             @include fontSizeHeaderButton;
 
-            &__text {
+            &__btn {
+                text-decoration: none;
+                background: transparent;
+                border: 0;
+                color: $DARKThemePrimalTextColor;
+                text-transform: uppercase;
+                cursor: pointer;
                 &:after {
                     content: '';
                     position: absolute;
