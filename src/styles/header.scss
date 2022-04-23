@@ -7,6 +7,7 @@
     text-transform: uppercase;
     overflow: hidden;
     @include primalFontBold;
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -32,6 +33,13 @@
                 @media screen and (max-width: 576px){
                     font-size: 70px;
                 }
+                @media screen and (max-width: 450px){
+                    font-size: 60px;
+                }
+
+                @media screen and (max-width: 380px){
+                    font-size: 50px;
+                }
             }
 
             &__description {
@@ -51,6 +59,14 @@
 
                 @media screen and (max-width: 576px){
                     font-size: 70px;
+                }
+
+                @media screen and (max-width: 450px){
+                    font-size: 60px;
+                }
+
+                @media screen and (max-width: 380px){
+                    font-size: 50px;
                 }
             }
 
@@ -158,55 +174,14 @@
                     }
                 }
 
-                .theme {
-                    @media screen and (max-width: 992px) {
-                         background: url("../images/header/right-header/theme.svg") no-repeat center;        
-                    }
-                    &__input {
-                        display: none;
-
-                        &:checked+.theme__slider {
-                            background-color: #000000;
-                        }
-
-                        &:checked+.theme__slider:before {
-                            transform: translateX(26px);
-                        }
-                    }
-
-                    &__slider {
-                        position: absolute;
-                        cursor: pointer;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: #ccc;
-                        transition: .4s;
-                        border-radius: 10%;
-
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            height: 26px;
-                            width: 26px;
-                            left: 4px;
-                            bottom: 4px;
-                            background-color: white;
-                            transition: .4s;
-                        }
-
-                        @media screen and (max-width: 992px) {
-                            display: none;
-                        }
-                    }
-
-                }
+                
+                
 
                 .language {
                     @media screen and (max-width: 992px) {
                         background: url("../images/header/right-header/language.svg") no-repeat center;
                         background-size: 55% auto; 
+                        cursor: pointer;
                    }
                     &__input {
                         display: none;
