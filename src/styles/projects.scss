@@ -6,12 +6,14 @@
         &:nth-child(2n+2){
             background-color: $DARKThemePrimalBGColor;
             color: $DARKThemePrimalTextColor;
-            
+            ::selection{
+                background: $primalBGColor;
+                color: $primalTextColor;
+            }
         }
-        &:nth-child(2n+2)::selection{
-            color: $primalBGColor;
-        }
+        
     }
+
 
     &-container{
         
@@ -88,6 +90,7 @@
                             @include primalFontBold;
                             text-transform: uppercase;
                             padding: 10px;
+                            
                         }
                         
                     }
