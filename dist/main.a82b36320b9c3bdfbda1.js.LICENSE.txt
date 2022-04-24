@@ -1,0 +1,5 @@
+/*!
+* ScrollToSmooth
+* Author: Bastian Fießinger
+* Version: 3.0.2
+*/
