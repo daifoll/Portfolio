@@ -1,9 +1,9 @@
-import 'scrolltosmooth'
-
-let smoothScroll = new scrollToSmooth('a', {
+import { ScrollToSmooth } from './scrolltosmooth';
+  
+let smoothScroll = new ScrollToSmooth('a', {
     // options here
     duration: 400,
-    easing: "easeInCubic",
 
 });
 smoothScroll.init();
+
