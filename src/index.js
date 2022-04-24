@@ -1,5 +1,6 @@
 import './styles/index.scss'
-import './scripts/footerData'
 import './scripts/scrollsm'
+import './scripts/footerData'
+import './scripts/scrolltosmooth'
 import './index.pug'
 
