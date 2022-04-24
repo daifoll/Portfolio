@@ -1,3 +1,5 @@
+import 'scrolltosmooth'
+
 let smoothScroll = new scrollToSmooth('a', {
     // options here
     duration: 400,
