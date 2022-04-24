@@ -1,4 +1,4 @@
-header.header
+header.header#started
     .container 
         .header__top
             .header__column.left-header
@@ -12,14 +12,15 @@ header.header
                         img(src=require("../images/header/contacts/phone.svg"), alt="").item-contacts__icon
                         span.item-contacts__text +7 996 500 38 86
                     a.contacts__item.item-contacts(href="images/header/contacts/portfoilio.pdf" download="")
+                        img(src=require("../images/header/contacts/email.svg"), alt="").item-contacts__icon
+                        span.item-contacts__text @kobykhnov.bl@gmail.com
+                    a.contacts__item.item-contacts(href="images/header/contacts/portfoilio.pdf" download="")
                         img(src=require("../images/header/contacts/download.svg"), alt="").item-contacts__icon
                         span.item-contacts__text Скачать резюме
-            //- .header__column.right-header
-            //-     .right-header__swithes.switches-header
-            //-         span.switches-header__text Сменить язык (ENG)
-            //-         label.switches-header__switch.language
-            //-             input(type='checkbox').language__input
-            //-             span.language__slider
-            //- .header__column.bottom-header 
-            //-     button.bottom-header__btn.projects-button-aimation проекты
-
+                .header__column.anchors-navigation
+                    a(href="#started").anchors-navigation__item
+                    a(href="#projex").anchors-navigation__item
+                    a(href="#nftmusic").anchors-navigation__item
+                    a(href="#calculator").anchors-navigation__item
+                    a(href="#todolist").anchors-navigation__item
+                    a(href="#footer").anchors-navigation__item

@@ -1,4 +1,5 @@
 import './styles/index.scss'
-// import './scripts/scroll'
 import './scripts/footerData'
+import './scripts/scrollsm'
 import './index.pug'
+
