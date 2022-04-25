@@ -279,15 +279,15 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 content: '';
-                width: 30px;
-                height: 30px;
-                border: 2px solid #a83246;
+                width: 15px;
+                height: 15px;
+                border: 2px solid rgb(68, 187, 68);
                 border-radius: 50%;
                 box-shadow: 1px 1px 13px 1px rgba(34, 60, 80, 0.45);
                 transition: all 0.3s;
             }
             &__item:hover::after{
-                background: rgb(100, 255, 100)
+                background: rgb(68, 187, 68)
             }
     }
 }
