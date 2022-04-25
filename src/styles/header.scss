@@ -73,6 +73,8 @@
 
             .contacts {
                 .item-contacts {
+                    display: flex;
+                    align-items: center;
                     &:not(:first-child) {
                         margin-left: 20px;
 
