@@ -8,7 +8,26 @@
     line-height: 1.5;
     display: flex;
     flex-direction: column;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        top: 0;
+        left: 0;
+    }
 
+    // &::after{
+    //     position: absolute;
+    //     content: '';
+    //     width: 100%;
+    //     height: 2px;
+    //     background: #fff;
+    //     bottom: 5%;
+    //     left: 0;
+    // }
     @media screen and (max-width: 1380px) {
         padding: 50px;
     }
