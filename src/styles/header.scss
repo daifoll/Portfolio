@@ -43,7 +43,7 @@
                 }
 
                 @media screen and (max-width: 400px){
-                    font-size: 35px;
+                    font-size: 38px;
                 }
             }
 
@@ -59,7 +59,11 @@
                 }
 
                 @media screen and (max-width: 400px){
-                    font-size: 35px;
+                    font-size: 38px;
+                }
+
+                @media screen and (device-width: 400px){
+                    font-size: 38px;
                 }
             }
 
@@ -82,7 +86,11 @@
                 }
 
                 @media screen and (max-width: 400px){
-                    font-size: calc($headerContactsFontSize / 2.5)
+                    font-size: calc($headerContactsFontSize / 1.7)
+                }
+
+                @media screen and (device-width: 280px){
+                    font-size: calc($headerContactsFontSize / 2.3)
                 }
 
 
