@@ -357,14 +357,15 @@
                 text-decoration: none;
                 position: relative;
                 &::after{
-                    content: '↓';
-                    width: 25px;
-                    height: 25px;
+                    content: '';
+                    width: 50px;
+                    height: 50px;
                     background: url('../images/header/bottom-header/projects-button.svg') no-repeat;
+                    background-size: 100% 100%;
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    left: 110%;
+                    right: -45%;
                 }
             }
     }
