@@ -9,6 +9,10 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 1380px) {
+        padding: 50px;
+    }
+
         ::selection{
             background: $primalBGColor;
             color: $primalTextColor;
@@ -38,6 +42,9 @@
             flex-direction: column;
             text-transform: uppercase;
             font-size: $footerHeaderFontSize;
+            @media screen and (max-width: 640px) {
+                font-size: calc($footerHeaderFontSize / 1.5);
+            }
                      
         }
 
@@ -48,6 +55,11 @@
             font-size: $footerProjectsFontSize;
             @media screen and (max-width: 1380px) {
                 justify-content: flex-start;
+                font-size: calc($footerProjectsFontSize * 1.3)
+            }
+
+            @media screen and (max-width: 640px) {
+                font-size: $footerProjectsFontSize;
             }
             &__wrapper{
                 display: flex;
@@ -66,6 +78,11 @@
             font-size: $footerContactsFontSize;
             @media screen and (max-width: 1380px) {
                 justify-content: flex-start;
+                font-size: calc($footerContactsFontSize * 1.3)
+            }
+
+            @media screen and (max-width: 640px) {
+                font-size: $footerContactsFontSize;
             }
             &__wrapper{
                 display: flex;
@@ -78,7 +95,7 @@
             text-align: center;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             font-size: $footerDateFontSize;
             
             
