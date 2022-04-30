@@ -9,36 +9,25 @@
     display: flex;
     flex-direction: column;
 
-
         ::selection{
             background: $primalBGColor;
             color: $primalTextColor;
         }
         &-container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
+          
    
         }
 
         &__wrapper{
             display: flex;
+                @media screen and (max-width: 1380px) {
+                    flex-direction: column;
+                }
 
         }
         &__column{
-            @media screen and (max-width: 1500px){
+            @media screen and (max-width: 1380px) {
                 &:not(:first-child){
-                    margin-top: 40px;
-                }
-                
-            }
-
-            @media screen and (max-height: 600px){
-                &:not(:first-child){
-                    margin-top: 0;
-                }
-                &:last-child{
                     margin-top: 50px;
                 }
             }
@@ -57,7 +46,9 @@
             flex-basis: 33.3%;
             justify-content: center;
             font-size: $footerProjectsFontSize;
-            // margin-left: 10%;
+            @media screen and (max-width: 1380px) {
+                justify-content: flex-start;
+            }
             &__wrapper{
                 display: flex;
                 flex-direction: column;
@@ -73,7 +64,9 @@
             justify-content: center;
             text-transform: uppercase;
             font-size: $footerContactsFontSize;
-            // margin-left: 10%;
+            @media screen and (max-width: 1380px) {
+                justify-content: flex-start;
+            }
             &__wrapper{
                 display: flex;
                 flex-direction: column;
