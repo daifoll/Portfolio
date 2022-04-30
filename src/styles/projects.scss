@@ -16,7 +16,7 @@
     }
 
     &-container{
-    
+       
     }
 
     &-item{
@@ -29,6 +29,11 @@
         @media screen and (max-width: 992px){
             flex-direction: column;
             height: auto;
+        }
+
+        @media screen and (device-width: 1024px) {
+            height: auto;
+            min-height: -webkit-fill-available;
         }
             .projects-image{
                 flex-basis: 50%;

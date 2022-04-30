@@ -12,6 +12,13 @@
     @media screen and (max-width: 1380px) {
         padding: 50px;
     }
+    @media screen and (device-width: 1024px) {
+        height: auto;
+        min-height: -webkit-fill-available;
+    }
+    @media screen and (max-width: 280px) {
+        padding: 20px;
+    }
 
         ::selection{
             background: $primalBGColor;
@@ -95,9 +102,11 @@
             text-align: center;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             font-size: $footerDateFontSize;
-            
+                @media screen and (max-width: 412px) {
+                    align-items: center;
+                }
             
         }
 }
