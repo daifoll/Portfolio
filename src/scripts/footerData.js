@@ -3,7 +3,7 @@
 'use strict'
 
 /* ПОЛУЧАЕМ И ВЫВОДИМ ВСЕ ПРОЕКТЫ В FOOTER */
-const FOOTER_PROJECTS = document.querySelector('.footer-projects')
+const FOOTER_PROJECTS = document.querySelector('.footer-projects__wrapper')
 const PROJECTS = document.querySelectorAll('.projects-item');
 
 for(let i = 0; i < PROJECTS.length; i++){

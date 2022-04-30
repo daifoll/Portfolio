@@ -1,20 +1,14 @@
 .footer{
     max-width: 100%;
+    padding: 100px;
     background: $DARKThemePrimalBGColor;
     color: $DARKThemePrimalTextColor;
     height: 100vh;
     @include primalFontSizeFooter;
     line-height: 1.5;
     display: flex;
-    align-items: center;
-        @media screen and (max-width: 912px){
-                align-items: flex-start;
-        }
+    flex-direction: column;
 
-        @media screen and (max-height: 600px){
-                height: 100vh;
-                align-items: flex-end;
-        }
 
         ::selection{
             background: $primalBGColor;
@@ -25,22 +19,12 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 20px;
-            @media screen and (max-width: 414px) {
-                height: inherit; 
-            }    
+   
         }
 
         &__wrapper{
             display: flex;
-            flex-basis: 100%;
-            @media screen and (max-width: 1500px){
-                flex-direction: column; 
-            }
 
-            @media screen and (max-height: 600px){
-                flex-direction: row;
-                
-            }
         }
         &__column{
             @media screen and (max-width: 1500px){
@@ -60,93 +44,50 @@
             }
         }
         &-header{
-            flex-basis: 40%;
+            flex-basis: 33.3%;
             display: flex;
             flex-direction: column;
             text-transform: uppercase;
             font-size: $footerHeaderFontSize;
-                @media screen and (max-width: 833px){
-                    font-size: calc($footerHeaderFontSize/1.3);
-                }
-                @media screen and (max-width: 540px){
-                    font-size: calc($footerHeaderFontSize/1.7);
-                }
-                @media screen and (max-width: 460px){
-                    font-size: calc($footerHeaderFontSize/2.5);
-                }
-
-                @media screen and (max-height: 600px){
-                    font-size: calc($footerHeaderFontSize/2);
-                }
-            
-            
+                     
         }
 
         &-projects{
             display: flex;
-            flex-direction: column;
-            flex-basis: 10%;
-            justify-content: space-between;
+            flex-basis: 33.3%;
+            justify-content: center;
             font-size: $footerProjectsFontSize;
-                @media screen and (max-width: 1500px){
-                    font-size: calc($footerProjectsFontSize/1.3);
-                }
-
-                @media screen and (max-height: 600px){
-                    margin-left: 60px;
-                }
+            // margin-left: 10%;
+            &__wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
             
         }
 
         &-contacts{
             display: flex;
-            flex-basis: 50%;
+            flex-basis: 33.3%;
             justify-content: center;
             text-transform: uppercase;
             font-size: $footerContactsFontSize;
-            @media screen and (max-width: 1500px){
-                font-size: calc($footerContactsFontSize/1.3);
-                justify-content: flex-start;
-            }
-            @media screen and (max-width: 700px) {
-                flex-direction: column;
-            }
-            @media screen and (max-height: 600px){
-                margin-left: 60px;
-            }
+            // margin-left: 10%;
             &__wrapper{
                 display: flex;
                 flex-direction: column;
-            }
-            :nth-child(1n+2){
-                margin-top: 20px;
-                @media screen and (max-width: 1500px){
-                    margin-top: 0;
-                }
+                justify-content: space-between;
             }
         }
         &-date{
             flex-basis: 100%;
             text-align: center;
-            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
             font-size: $footerDateFontSize;
             
-            @media screen and (max-width: 1500px){
-                margin-top: 100px;
-                font-size: calc($footerDateFontSize/2);
-            }
-            @media screen and (max-width: 540px){
-                font-size: calc($footerDateFontSize/2.5);
-            }
-
-            @media screen and (max-height: 820px){
-                margin-top: 100px;
-            }
-
-            @media screen and (max-height: 600px){
-                
-                font-size: calc($footerDateFontSize/2.5); 
-            }
             
         }
 }
