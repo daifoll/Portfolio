@@ -3,5 +3,6 @@
 <br>
 <strong>Связаться со мной:</strong>
 <ul>
-  <ol><a href="tel:899650038886">Позвонить</a></ol>
+  <ol><a href="tel:899650038886">+7 996 500 38 86</a></ol>
+  <ol><a href="mailto:kobykhnov.bl@gmail.com">kobykhnov.bl@gmail.com</a></ol>
  </ul>
