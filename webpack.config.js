@@ -112,6 +112,12 @@ module.exports = {
                 loader: 'html-loader'
             },
 
+            // LOADING .PDF
+            {
+                test: /\.(otf|pdf)$/,
+                type: 'asset/resource',
+            },
+
             //LOADING .JS
 
             {

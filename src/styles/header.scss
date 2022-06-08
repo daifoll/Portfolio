@@ -346,12 +346,14 @@
         padding: 50px;
         font-size: $headerProjectsBTN;
         color: rgb(68, 187, 68);
-        @media screen and (max-width: 540px){
-            padding: 10px;
+        @media screen and (max-width: 1097px){
+            padding: 0;
+            padding-bottom: 40px;
         }
 
-        @media screen and (max-width: 412px){
-            bottom: 10%;
+        @media screen and (device-width: 912px){
+            font-size: calc($headerProjectsBTN * 2);
+            padding-bottom: 100px;
         }
             &__item{
                 text-decoration: none;
@@ -365,27 +367,16 @@
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    right: -45%;
+                    right: 50%;
+                    transform: translateX((50%));
                     animation-name: projectsButtonAnimation;
                     animation-duration: 0.4s;
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
-                }
-
-                &::before{
-                    content: '';
-                    width: 50px;
-                    height: 50px;
-                    background: url('../images/header/bottom-header/projects-button.svg') no-repeat;
-                    background-size: 100% 100%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: -45%;
-                    animation-name: projectsButtonAnimation;
-                    animation-duration: 0.4s;
-                    animation-iteration-count: infinite;
-                    animation-direction: alternate;
+                    @media screen and (device-width: 912px){
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
 
                 @keyframes projectsButtonAnimation {
