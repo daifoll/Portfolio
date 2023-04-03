@@ -1,5 +1,37 @@
 section.projects
     .projects-container
+        .projects__column.projects-item#ecommerce
+            .projects-item__img.projects-image
+                img.projects-image__img(src=require("../images/projects/ecommerce/commerce.png"), alt="Projex")
+            .project-item__info.projects-info
+                .projects-info__header.projects-header
+                    span.projects-header__item «Интернет-магазин»
+                .projects-info__description.projects-description
+                    p.projects-description__item Используемые технологии:
+                    ul.projects-description__list.projects-description-list
+                        li.projects-description-list__item Next.js
+                        li.projects-description-list__item Redux (Toolkit)
+                        li.projects-description-list__item Typescript
+                        li.projects-description-list__item Stripe (для тестовой оплаты)
+                        li.projects-description-list__item API: 
+                            a.link(href="https://fakeapi.platzi.com/" target="_blank") Platzi Fake Store API 
+                        li.projects-description-list__item CSS-фреймворк: Tailwind
+                    p.projects-description__item Что реализовано:
+                    ul.projects-description__list.projects-description-list
+                        li.projects-description-list__item Получение списка категорий и товаров 
+                        li.projects-description-list__item Пагинация
+                        li.projects-description-list__item Сортировка товаров по цене
+                        li.projects-description-list__item Поиск по ключевому слову
+                        li.projects-description-list__item Добавление / удаление товаров в корзине
+                        li.projects-description-list__item Тестовая оплата с помощью сервиса 
+                            a(href="https://stripe.com" target="_blank") Stripe
+                        li.projects-description-list__item Адаптация под маленькие экраны и мобильные устройства
+                        li.projects-description-list__item Skeleton loading для каждой страницы
+
+                .projects-info__button.projects-button 
+                    a(href="https://e-commerce-daifoll.vercel.app" target="_blank").projects-button__watchBtn
+                        img(src=require("../images/projects/projex/check-project.svg"), alt="Посмотреть проект").projects-button__img
+                        span.projects-button__text Посмотреть проект                         
         .projects__column.projects-item#projex
             .projects-item__img.projects-image
                 img.projects-image__img(src=require("../images/projects/projex/projexScreen.png"), alt="Projex")
@@ -9,11 +41,11 @@ section.projects
                 .projects-info__description.projects-description
                     p.projects-description__item Используемые технологии:
                     ul.projects-description__list.projects-description-list
-                        li.projects-description-list__item HTML5
-                        li.projects-description-list__item CCS3
-                        li.projects-description-list__item JS6
-                        li.projects-description-list__item WEBPACK5
-                        li.projects-description-list__item NODE JS
+                        li.projects-description-list__item HTML
+                        li.projects-description-list__item CSS
+                        li.projects-description-list__item JavaScript
+                        li.projects-description-list__item Webpack 5
+                        li.projects-description-list__item Библиотеки: scrolltosmooth.js, docSlider.js
                     p.projects-description__item Что реализовано:
                     ul.projects-description__list.projects-description-list
                         li.projects-description-list__item Адаптивная верстка по макету из Figma
@@ -38,11 +70,11 @@ section.projects
                 .projects-info__description.projects-description
                     p.projects-description__item Используемые технологии:
                     ul.projects-description__list.projects-description-list
-                        li.projects-description-list__item HTML5
-                        li.projects-description-list__item CCS3
-                        li.projects-description-list__item JS6
-                        li.projects-description-list__item WEBPACK5
-                        li.projects-description-list__item NODE JS
+                        li.projects-description-list__item HTML
+                        li.projects-description-list__item CSS
+                        li.projects-description-list__item JavaScript
+                        li.projects-description-list__item Webpack 5
+                        li.projects-description-list__item Библиотеки: scrolltosmooth.js, docSlider.js
                     p.projects-description__item Что реализовано:
                     ul.projects-description__list.projects-description-list
                         li.projects-description-list__item Адаптивная верстка по макету из Figma
@@ -63,9 +95,9 @@ section.projects
                 .projects-info__description.projects-description
                     p.projects-description__item Используемые технологии:
                     ul.projects-description__list.projects-description-list
-                        li.projects-description-list__item HTML5
-                        li.projects-description-list__item CCS3
-                        li.projects-description-list__item JS6
+                        li.projects-description-list__item HTML
+                        li.projects-description-list__item CSS
+                        li.projects-description-list__item JavaScript
                     p.projects-description__item Что реализовано:
                     ul.projects-description__list.projects-description-list
                         li.projects-description-list__item Добавление новой задачи

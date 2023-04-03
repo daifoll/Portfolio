@@ -36,7 +36,7 @@
             min-height: -webkit-fill-available;
         }
             .projects-image{
-                flex-basis: 50%;
+                flex-basis: 45%;
                 height: 400px;
                 position: relative;
 
@@ -55,7 +55,7 @@
             }
     
             .projects-info{
-                flex-basis: 50%;
+                flex-basis: 55%;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
@@ -86,7 +86,7 @@
                             }
                     }
                     .projects-description{
-                        margin-top: 20px;
+                        margin-top: 50px;
                         display: flex;
                         flex-direction: column;
                             &__item{
