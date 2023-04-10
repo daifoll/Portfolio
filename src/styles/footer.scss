@@ -112,9 +112,13 @@
             flex-basis: 100%;
             text-align: center;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-end;
             font-size: $footerDateFontSize;
+                @media screen and (max-width: 1380px) {
+                    justify-content: center;
+                }
+
                 @media screen and (max-width: 412px) {
                     align-items: center;
                 }
