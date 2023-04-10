@@ -1,8 +1,35 @@
 section.projects
     .projects-container
+        .projects__column.projects-item#tech-english
+            .projects-item__img.projects-image
+                img.projects-image__img(src=require("../images/projects/tech-english/tech-english.png"), alt="Tech-english")
+            .project-item__info.projects-info
+                .projects-info__header.projects-header
+                    span.projects-header__item «Tech English»
+                .projects-info__description.projects-description
+                    p.projects-description__item Используемые технологии:
+                    ul.projects-description__list.projects-description-list
+                        li.projects-description-list__item React.js
+                        li.projects-description-list__item Typescript
+                        li.projects-description-list__item Tailwind CSS
+                        li.projects-description-list__item Material UI
+                    p.projects-description__item Что реализовано:
+                    ul.projects-description__list.projects-description-list
+                        li.projects-description-list__item SPA приложение
+                        li.projects-description-list__item Получение наборов слов по 
+                           a(href="https://jsonbin.io" target="_blank") API (JSONBIN)
+                        li.projects-description-list__item Функция "добавления в словарь", позволяет добавлять слова в хранилище, доступное из любого места приложения
+                        li.projects-description-list__item Выбор набора слов - сейчас доступны переводы с английского на русский, а также с русского на английский
+                        li.projects-description-list__item Просмотр результов после прохождения теста, с показом ошибок и набранных баллов
+                        li.projects-description-list__item Адаптация под маленькие экраны и мобильные устройства
+                    .projects-info__button.projects-button 
+                        a(href="https://tech-english.vercel.app" target="_blank").projects-button__watchBtn
+                            img(src=require("../images/projects/projex/check-project.svg"), alt="Посмотреть проект").projects-button__img
+                            span.projects-button__text Посмотреть проект  
+
         .projects__column.projects-item#ecommerce
             .projects-item__img.projects-image
-                img.projects-image__img(src=require("../images/projects/ecommerce/commerce.png"), alt="Projex")
+                img.projects-image__img(src=require("../images/projects/ecommerce/commerce.png"), alt="E-Commerce")
             .project-item__info.projects-info
                 .projects-info__header.projects-header
                     span.projects-header__item «Интернет-магазин»
